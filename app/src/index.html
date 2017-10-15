@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="newApp.ui" ng-controller="mainController as vm">
+    <head>
+        <base href="/index.html" />
+        <title translate="newApp.TITLE"></title>
+        <link rel=stylesheet href="./vendor/vendor.css" />
+        <link rel=stylesheet href="./static/sass/application.min.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <body>
+        <div class="page-frame">
+			<app-top-nav></app-top-nav>
+            <div ui-view="" class="content-frame"></div>
+        </div>
+
+        <!-- Single vendor.js file for all third party dependencies -->
+        <script type=text/javascript src="./vendor/vendor.js"></script>
+
+        <!-- The JS file for this application -->
+        <script type=text/javascript src="./application-ui.js"></script>
+    </body>
+</html>
